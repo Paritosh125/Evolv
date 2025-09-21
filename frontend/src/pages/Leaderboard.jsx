@@ -12,7 +12,7 @@ export default function Leaderboard() {
         const fetchData = async () => {
             try {
                 const res = await axios.get(
-                    `http://localhost:5000/api/leaderboard?type=${type}`,
+                    `https://evolv-125.vercel.app/api/leaderboard?type=${type}`,
                     { headers: { Authorization: `Bearer ${token}` } }
                 );
                 setData(res.data.leaderboard || []);
@@ -42,8 +42,8 @@ export default function Leaderboard() {
                     <button
                         key={t}
                         className={`px-5 py-2 rounded-xl font-semibold transition-all ${t === type
-                                ? "bg-accent text-white shadow-lg shadow-accent/50 scale-105"
-                                : "bg-card hover:bg-accent/30"
+                            ? "bg-accent text-white shadow-lg shadow-accent/50 scale-105"
+                            : "bg-card hover:bg-accent/30"
                             }`}
                         onClick={() => setType(t)}
                     >
