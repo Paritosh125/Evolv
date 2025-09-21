@@ -17,7 +17,7 @@ app.use(express.json());
 // ✅ CORS Fix
 app.use(
     cors({
-        origin: "http://localhost:5173", // Frontend URL
+        origin: "https://evolv-125.vercel.app/", // Frontend URL
         credentials: true, // if using cookies or auth headers
     })
 );
