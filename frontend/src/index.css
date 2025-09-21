@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+    --color-background: #1A1A2E;
+    --color-card: #16213E;
+    --color-accent: #0F3460;
+    --color-reward: #FFD700;
+    --color-xp: #3B82F6;
+    --color-text: #E94560;
+
+    /* ✅ Re-add default breakpoints */
+    --breakpoint-sm: 640px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-xl: 1280px;
+}
