@@ -16,10 +16,7 @@ const app = express();
 app.use(express.json());
 // ✅ CORS Fix
 app.use(
-    cors({
-        origin: "https://evolv-125.vercel.app", // Frontend URL
-        credentials: true, // if using cookies or auth headers
-    })
+    cors()
 );
 
 // Routes
