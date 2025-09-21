@@ -12,7 +12,7 @@ export default function Leaderboard() {
         const fetchData = async () => {
             try {
                 const res = await axios.get(
-                    `https://evolv-125.vercel.app/api/leaderboard?type=${type}`,
+                    `https://evolv-125.onrender.com/api/leaderboard?type=${type}`,
                     { headers: { Authorization: `Bearer ${token}` } }
                 );
                 setData(res.data.leaderboard || []);
